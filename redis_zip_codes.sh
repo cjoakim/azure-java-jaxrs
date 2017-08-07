@@ -5,15 +5,15 @@
 # and the corresponding value is a JSON document created from the csv line.
 # This script will also fetch, for verification purposes, the populated keys.
 #
-# Chris Joakim, Microsoft, 2016/07/25
+# Chris Joakim, Microsoft, 2017/08/07
 
 source classpath
 
 echo 'redis load ...'
-java -classpath $CP com.joakim.azure.Main --redis --load-cache-zipcodedata &> tmp/redis_load.log
+java -classpath $CP com.joakim.azure.Main --redis --load-cache-zipcodedata > tmp/redis_load.log
 
 echo 'redis read ...'
-java -classpath $CP com.joakim.azure.Main --redis --read-cache-zipcodedata &> tmp/redis_read.log
+java -classpath $CP com.joakim.azure.Main --redis --read-cache-zipcodedata > tmp/redis_read.log
 
 echo 'scanning load log for Davidson ...'
 cat tmp/redis_load.log | grep Davidson

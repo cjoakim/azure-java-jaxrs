@@ -1,14 +1,13 @@
-# azure-jax-rs
+# azure-java-jaxrs
 
 This project implements the following:
 
 1) Java utility code to access various Azure functionality such as Azure Redis Cache, etc.
 2) A Java web application built with the JAX-RS API, which exposes some of the utility code.
-3) A Python3 subproject for ad-hoc purposes such as a HTTP client to the JAX-RS web app.
 
 ## links
 
-- https://github.com/cjoakim/azure-jax-rs (this repo)
+- https://github.com/cjoakim/azure-java-jaxrs (this repo)
 - https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-get-started/
 - https://azure.microsoft.com/en-us/documentation/articles/web-sites-java-add-app/
 
@@ -28,10 +27,7 @@ This project implements the following:
 - https://azure.microsoft.com/en-us/documentation/articles/service-bus-java-how-to-use-queues/
 - https://azure.microsoft.com/en-us/documentation/articles/service-bus-pricing-billing/
 
-- https://github.com/Azure/azure-event-hubs/tree/master/java
-
-
-## assumptions
+## workstation assumptions
 
 - Java 8 is installed
 - Apache Maven is installed
@@ -86,27 +82,4 @@ implemented in this simple web app.
 
 ```
 ./redis_zip_codes.sh
-```
-
-## python3 sub-application
-
-The python3 in the 'pyenv' is used as a HTTP client (i.e - a "better curl").
-
-### creating and using the virtual environment
-
-See https://packaging.python.org/en/latest/installing.html
-
-```
-... this assumes you have python version 3 installed (i.e. - 3.5.2) ...
-
-... open another terminal window to this project root directory ...
-
-$ pyvenv pyenv         (this creates the python virtual environment)
-$ cd pyenv
-$ pip_upgrade.sh       (install the pip libraries into the venv per requirements.in)
-$ source bin/activate  (activate the venv)
-$ python main.py       (see the displayed usage instructions)
-$ python main.py ping
-$ python main.py redis_post time
-$ python main.py redis_get time
 ```

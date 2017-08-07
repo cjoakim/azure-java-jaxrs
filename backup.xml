@@ -1,14 +1,14 @@
-<project name="azure-java" default="backup" basedir=".">
+<project name="backup" default="backup" basedir=".">
 
     <description>
         Ant script to create a backup zip file of this project.
-        Chris Joakim, Microsoft, 2016/07/21
-    	$ ant -f backup.xml
+        Chris Joakim, Microsoft, 2017/08/07
+        $ ant -f backup.xml
     </description>
 
     <!-- These are the only properties you should have to change.  -->
     <property name="_projectRoot" value="/Users/cjoakim/github/" />
-    <property name="_projectName" value="azure-jax-rs" />
+    <property name="_projectName" value="azure-java-jaxrs" />
     <property name="_backupRoot"  value="/Backups/projects" />
 
     <!-- These properties are derived from the above. -->
@@ -38,10 +38,10 @@
         </description>
 
         <tstamp>
-            <format property="_backupTstamp" pattern="yyyyMMdd_HHmm" />
+            <format property="_backupTstamp" pattern="yyyyMMdd-HHmm" />
         </tstamp>
 
-        <property name="_zipFilename" value="${_backupDir}/${_projectName}_${_backupTstamp}.zip" />
+        <property name="_zipFilename" value="${_backupDir}/${_projectName}-${_backupTstamp}.zip" />
 
         <mkdir dir="${_backupRoot}" />
         <mkdir dir="${_backupDir}" />

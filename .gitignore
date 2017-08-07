@@ -4,6 +4,8 @@
 .project
 .settings/
 RemoteSystemsTempFiles/
+log/
+tmp/
 
 # Compiled class file
 *.class
