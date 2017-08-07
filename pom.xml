@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>azure-java-jaxrs</groupId>
+    <artifactId>azure-java-jaxrs</artifactId>
+    <version>azure-java-jaxrs</version>
+    <name>azure-java-jaxrs</name>
+    <description>azure-java-jaxrs</description>
+
+    <dependencies>
+
+        <!-- start of general dependencies -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.5</version>
+		</dependency>
+ 
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <!-- end of general dependencies -->
+
+        <!-- start of four dependencies for JAX-RS -->
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>3.0.18.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>3.0.18.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>async-http-servlet-3.0</artifactId>
+            <version>3.0.18.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-servlet-initializer</artifactId>
+            <version>3.0.18.Final</version>
+        </dependency>
+        <!-- end of four dependencies for JAX-RS -->
+
+        <!-- start of azure dependencies -->  
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-compute</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-network</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-sql</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-storage</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-websites</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-svc-mgmt-media</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-servicebus</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-serviceruntime</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>azure-storage</artifactId>
+          <version>4.2.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-documentdb</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>adal4j</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        
+		<dependency>
+		    <groupId>com.microsoft.azure</groupId>
+		    <artifactId>azure-eventhubs</artifactId>
+		    <version>0.7.5</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>com.microsoft.azure</groupId>
+		    <artifactId>azure-eventhubs-eph</artifactId>
+		    <version>0.7.2</version>
+		</dependency>
+
+        <!-- end of azure dependencies --> 
+
+        <!-- start of other dependencies --> 
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.8.1</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>oauth2-oidc-sdk</artifactId>
+            <version>4.5</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4</version>
+        </dependency>
+
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.7</version>
+		</dependency>
+
+        <!-- end of other dependencies --> 
+
+    </dependencies>
+
+    <build>
+        <finalName>azure-java-jaxrs</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>surefire-it</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <configuration>
+                            <skip>false</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <configuration>
+                    <webApp>
+                        <contextPath>/</contextPath>
+                    </webApp>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <stopKey>foo</stopKey>
+                    <stopPort>9999</stopPort>
+                    <stopWait>1</stopWait>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>start</goal>
+                        </goals>
+                        <configuration>
+                            <scanIntervalSeconds>0</scanIntervalSeconds>
+                            <daemon>true</daemon>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>stop</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

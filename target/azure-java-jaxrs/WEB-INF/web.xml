@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<display-name>azure jax-rs webapp</display-name>
+
+	<servlet>
+		<servlet-name>webapp</servlet-name>
+		<servlet-class>
+			org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+		</servlet-class>
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>com.joakim.azure.websvc.WebserviceApplication</param-value>
+			<!-- 			
+			<param-value>com.restfully.shop.services.ShoppingApplication</param-value>
+			-->
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>webapp</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
