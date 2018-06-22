@@ -89,3 +89,7 @@ implemented in this simple web app.
 ```
 redis-cli -h $AZURE_REDISCACHE_HOST -p 6379 -a $AZURE_REDISCACHE_KEY
 ```
+
+## Create Azure Web App
+
+![image 1](doc/create-web-app.png "")
