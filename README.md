@@ -83,3 +83,9 @@ implemented in this simple web app.
 ```
 ./redis_zip_codes.sh
 ```
+
+## redis-cli connect to Azure
+
+```
+redis-cli -h $AZURE_REDISCACHE_HOST -p 6379 -a $AZURE_REDISCACHE_KEY
+```
