@@ -3,7 +3,7 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-	<display-name>azure jax-rs webapp</display-name>
+	<display-name>jaxrs</display-name>
 
 	<servlet>
 		<servlet-name>webapp</servlet-name>

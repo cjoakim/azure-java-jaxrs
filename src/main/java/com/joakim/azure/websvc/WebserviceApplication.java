@@ -20,7 +20,7 @@ public class WebserviceApplication extends Application {
 
       singletons.add(new PingResourceImpl());
       singletons.add(new RedisResourceImpl());
-      singletons.add(new StorageResourceImpl());
+      //singletons.add(new StorageResourceImpl());
    }
 
    @Override
